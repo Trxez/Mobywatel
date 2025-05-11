@@ -1,0 +1,348 @@
+<html>
+
+<head>
+    <script src="../sw.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="viewport" content="width=device-width">
+	<link rel="apple-touch-icon" href="../images/coi_common_ui_ic_mobywatel_logo.svg">
+    <title>mObywatel 2.0</title>
+
+    <link rel="shortcut icon" href="../images/coi_common_ui_ic_mobywatel_logo.svg" type="image/x-icon">
+    <meta name="theme-color" content="#fff">
+    <meta name="next-head-count" content="5">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="../manifest.json">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="../../../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <style>
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 100;
+            src: url(../images/roboto_light.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(../images/roboto_regular.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            src: url(../images/roboto_medium.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: italic;
+            font-weight: 400;
+            src: url(../images/roboto_medium_italic.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(../images/roboto_bold.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            src: url(../images/roboto_black.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            src: url(../images/roboto_medium_numbers.ttf) format("truetype");
+        }
+
+        :root {
+            --blue-active: #064792;
+        }
+
+        * {
+            user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+            box-sizing: border-box;
+        }
+
+        img {
+            pointer-events: none;
+        }
+
+        .navbar {
+            overflow: hidden;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            .dzit {
+                margin-bottom: 1.0rem;
+            }
+        }
+
+
+        body, html {
+            height: 100%;
+            overscroll-behavior-y: contain;
+            padding: 0;
+            margin: 0;
+            font-family: Roboto, sans-serif;
+            background: #f5f6fb;
+            color: #131419;
+        }
+
+        
+        @supports (-webkit-touch-callout: none) {
+            .dzit {
+                margin-bottom: 1.0rem;
+            }
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .spinner {
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            border: .2em solid #dfdfdf;
+            border-right-color: #dd1b42;
+            animation: spinner-d3wgkg 1s linear infinite;
+        }
+
+        .Login_container_1 {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .Login_main_1 {
+            flex: 1 1;
+            display: flex;
+            flex-direction: column;
+			margin-top:50px;
+            width: 100%;
+        }
+
+        .Login_logoTop {
+            position: absolute;
+			width: fixed;
+			height: 40px;
+            top: 50px;
+			left: 15px;
+        }
+
+        .Login_changePassword_1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #dbebfa;
+            border-radius: 50%;
+            width: 6em;
+            height: 6em;
+        }
+
+        .Login_changePasswordIcon {
+            color: #075094;
+            width: 4em;
+            height: 4em;
+        }
+
+        .Login_bioLogin {
+            background-color: #dbebfa;
+            text-align: center;
+            margin: 10px 0;
+            line-height: 0;
+            border-radius: 10em;
+            padding: .2em 1em;
+        }
+
+        .tekst_biometeria {
+            color: #075094;
+            font-size: .8em;
+            font-weight: bold;
+        }
+
+        .Login_passwordSection {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            width: 100%;
+            padding: 15px;
+            border-radius: 15px;
+            max-width: 400px;
+            margin: 20px 0;
+        }
+
+        .Login_passwordLabel {
+            color: #696978;
+            font-size: .8em;
+            font-weight: 300;
+            line-height: 0;
+            text-align: left;
+        }
+		.logininfo {
+            color: #696978;
+            font-size: 15px;
+			margin-left: 3px;
+			margin-top: -20px;
+            font-weight: 300;
+            line-height: 0;
+            text-align: left;
+			
+        }
+
+        .Login_passwordInput {
+            padding: 1em;
+            font-size: 1em;
+            border: 1px solid #56595b;
+            background-color: #fff;
+            border-radius: .2em;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: .5em;
+        }
+
+        .Login_passwordInput::placeholder {
+            color: #696978;
+        }
+
+        .Login_forgotPassword {
+            color: #075094;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 0;
+        }
+
+        .Login_passwordContainer {
+            position: relative;
+            width: 100%;
+        }
+
+        .Login_eyeIcon__A9_oq {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-35%);
+            cursor: pointer;
+        }
+
+        .Login_submitButton {
+            width: 100%;
+            padding: .6em;
+            background-color: #024a94;
+            color: #fff;
+            border: none;
+            border-radius: 5em;
+            cursor: pointer;
+            margin-top: 5em;
+            font-size: 1em;
+            font-weight: 600;
+            line-height: 0;
+        }
+
+        .Login_footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+        .Login_footerImages {
+            display: flex;
+            gap: 10px;
+        }
+
+        .Login_versionText {
+            font-size: 12px;
+            font-weight: 300;
+            color: #9c9da2;
+        }
+
+        @media (max-width: 768px) {
+            .Login_container__DPp2Z {
+                padding: 10px;
+            }
+
+            .Login_main__3PNdJ {
+                padding: 0 10px;
+            }
+
+            .Login_passwordSection {
+                width: 100%;
+            }
+
+            .Login_submitButton {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+
+</head>
+<body>
+        <div class="dynamic-panel">
+    <div class="Login_container_1">
+        <main class="Login_main_1">
+            <img src="../images/coi_common_ic_mobywatel_horizontal_logo_text.svg" alt="Logo" class="Login_logoTop">
+            <p style="font-weight: 500; font-size: 8vw;margin-top: 60px;  font-weight: bold;">Dzień dobry!</p>
+			<p class="logininfo">Zaloguj się do aplikacji.</p>
+            <div class="Login_passwordSection">
+                <p class="Login_passwordLabel">Hasło</p>
+                <div class="Login_passwordContainer">
+                    <input type="password" placeholder="Wpisz hasło" class="Login_passwordInput">
+                   
+                </div>
+                <p class="Login_forgotPassword">Nie pamiętasz hasła?</p>
+            </div>
+        </main>
+        <button class="Login_submitButton" onclick="window.location.href='dashboard.html';">
+            <p>Zaloguj się</p>
+        </button>
+        <footer class="Login_footer">
+            <div class="Login_footerImages">
+                <img src="../images/coi_common_ui_ic_coi_mobywatel_logo.svg" alt="Footer Image 1" style="width: 5em; height: auto;">
+                <img src="../images/coi_common_ui_ic_mc_mobywatel_logo.svg" alt="Footer Image 2" style="width: 4em; height: auto;">
+            </div>
+            <p class="Login_versionText">wersja 4.51.0 (27)</p>
+        </footer>
+    </div>
+</body>
+
+</html>

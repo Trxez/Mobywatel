@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pl">
+</head>
+    
+<meta name="viewport" content="width=device-width">
+    <title>mObywatel 2.0</title>
+    <link rel="shortcut icon" href="../images/coi_common_ui_ic_mobywatel_logo.svg" type="image/x-icon">
+    <meta name="theme-color" content="#fff">
+    <meta name="next-head-count" content="5">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <script src="../sw.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="manifest" href="../manifest.json">
+
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+</head>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link id="chromealerabat-link" rel="stylesheet" type="text/css" href="chrome-extension_/dacdinoicboceafielngnmjjplncljhj/content.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    
+<html>
+    <style>
+
+                @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 100;
+            src: url(../images/roboto_light.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(../images/roboto_regular.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            src: url(../images/roboto_medium.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: italic;
+            font-weight: 400;
+            src: url(../images/roboto_medium_italic.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(../images/roboto_bold.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            src: url(../images/roboto_black.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            src: url(../images/roboto_medium_numbers.ttf) format("truetype");
+        }
+
+        :root {
+            --blue-active: #064792;
+        }
+
+        * {
+            user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+            box-sizing: border-box;
+        }
+
+        img {
+            pointer-events: none;
+        }
+
+        body, html {
+            height: 100%;
+            overscroll-behavior-y: contain;
+            padding: 0;
+            margin: 0;
+            font-family: Roboto, sans-serif;
+            background: #f5f6fb;
+            color: #131419;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .spinner {
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            border: .2em solid #dfdfdf;
+            border-right-color: #dd1b42;
+            animation: spinner-d3wgkg 1s linear infinite;
+        }
+
+        @keyframes spinner-d3wgkg {
+            to {
+                transform: rotate(1turn);
+            }
+        }
+
+        .Qr_container__HYFCF {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .Qr_title__ifT94 {
+            font-weight: 500;
+            margin-bottom: .3em;
+            margin-top: 1em;
+            font-size: 2.2em;
+        }
+
+        .Qr_singleCard__iCjtA {
+            background-color: #fff;
+            border-radius: .4em;
+            padding: 1em;
+            justify-content: space-between;
+            margin-bottom: 1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .Qr_leftContent__hGZOH {
+            display: flex;
+            align-items: center;
+        }
+
+        .Qr_singleCard__iCjtA p {
+            margin-left: .5em;
+            line-height: 1;
+        }
+
+        .Qr_leftContent__hGZOH img {
+            vertical-align: middle;
+        }
+
+        .Qr_textContainer__1_A2q {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Qr_mainText__7UW_9 {
+            font-size: 1em;
+            margin-bottom: .2em;
+        }
+
+        .Qr_secondaryText__BBj73 {
+            font-weight: 300;
+            font-size: .85em;
+            color: #666;
+            margin-top: 0;
+        }
+
+        .BottomNav_bottomNav__JQdpA {
+            width: 100%;
+            height: 90px;
+            position: fixed;
+            bottom: 0;
+            background-color: #f5f6fb;
+            border-top: 1px solid #d6d6d6;
+            z-index: 99;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            left: 0;
+        }
+
+        .BottomNav_bnTab__WzkWH {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 10px;
+        }
+
+        .BottomNav_bnTab__WzkWH img {
+            height: 24px;
+            margin-bottom: 4px;
+        }
+
+        .BottomNav_bnTab__WzkWH span {
+            font-size: .7em;
+            font-weight: 300;
+        }
+
+        .BottomNav_activeText__6iAIF {
+            color: var(--blue-active);
+        }
+
+        @media (max-width: 768px) {
+            .Qr_container__HYFCF {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="Qr_container__HYFCF">
+    <h1 class="Qr_title__ifT94" style="font-weight: bold;" >Kod QR</h1>
+    <p style="margin-top: 2em; font-size: 1em; font-weight: bold;">Wybierz, co chcesz zrobić</p>
+
+    <div class="Qr_singleCard__iCjtA" onclick="window.location.href='qr.html'">
+        <div class="Qr_leftContent__hGZOH">
+            <img src="../images/ai002_confirm_identity.svg" alt="ID" width="30" height="30">
+            <div class="Qr_textContainer__1_A2q">
+                <p class="Qr_mainText__7UW_9" style="font-weight: bold;">Zeskanuj kod QR</p>
+                <p class="Qr_secondaryText__BBj73">Zaloguj się lub potwierdź swoje dane.</p>
+            </div>
+        </div>
+        <img src="../images/ic_arrow_forward_Dgray.svg" alt="arrow" width="17" height="17">
+    </div>
+
+    <div class="Qr_singleCard__iCjtA" onclick="window.location.href='qr.html'">
+        <div class="Qr_leftContent__hGZOH">
+            <img src="../images/ai003_check_document.svg" alt="ID" width="30" height="30">
+            <div class="Qr_textContainer__1_A2q">
+                <p class="Qr_mainText__7UW_9" style="font-weight: bold;">Pokaż kod QR</p>
+                <p class="Qr_secondaryText__BBj73">Sprawdź dokument innej osoby.</p>
+            </div>
+        </div>
+        <img src="../images/ic_arrow_forward_Dgray.svg" alt="arrow" width="17" height="17">
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="BottomNav_bottomNav__JQdpA">
+        <div class="BottomNav_bnTab__WzkWH" onclick="window.location.href='dashboard.html'">
+            <img src="../images/ab001_home.svg" alt="dashboard">
+            <span>Start</span>
+        </div>
+        <div class="BottomNav_bnTab__WzkWH" onclick="window.location.href='documents.html'">
+            <img src="../images/ad005_framed_person.svg" alt="documents">
+            <span>Dokumenty</span>
+        </div>
+        <div class="BottomNav_bnTab__WzkWH" onclick="window.location.href='services.html'">
+            <img src="../images/ac001_services.svg" alt="services">
+            <span>Usługi</span>
+        </div>
+        <div class="BottomNav_bnTab__WzkWH">
+            <img src="../images/b003_scanner_qr.svg" alt="qr">
+            <span>Kod QR</span>
+        </div>
+        <div class="BottomNav_bnTab__WzkWH" onclick="window.location.href='more.html'">
+            <img src="../images/ab010_more.svg" alt="more">
+            <span>Więcej</span>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

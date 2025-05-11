@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>mObywatel 2.0</title>
+    <link rel="shortcut icon" href="../images/coi_common_ui_ic_mobywatel_logo.svg" type="image/x-icon">
+        <meta name="theme-color" content="#F5F6FB">
+    <meta name="next-head-count" content="5">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <script src="../sw.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="manifest" href="../manifest.json">
+
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+</head>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link id="chromealerabat-link" rel="stylesheet" type="text/css" href="chrome-extension_/dacdinoicboceafielngnmjjplncljhj/content.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    
+<html>
+
+    <script>
+        window.addEventListener("load", function() {
+    // Ukrywanie paska adresu na iOS
+    if ("standalone" in window.navigator && window.navigator.standalone) {
+        var a = document.getElementsByTagName("a");
+        for (var i = 0; i < a.length; i++) {
+            a[i].addEventListener("click", function(event) {
+                var newLocation = this.href;
+                event.preventDefault();
+                window.location = newLocation;
+            }, false);
+        }
+    }
+    
+    // Alternatywne podejście do ukrywania paska adresu
+    setTimeout(function() {
+        window.scrollTo(0, 1);
+    }, 0);
+});
+
+    </script>
+
+    <style>
+
+                @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 100;
+            src: url(../images/roboto_light.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(../images/roboto_regular.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            src: url(../images/roboto_medium.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: italic;
+            font-weight: 400;
+            src: url(../images/roboto_medium_italic.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(../images/roboto_bold.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            src: url(../images/roboto_black.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            src: url(../images/roboto_medium_numbers.ttf) format("truetype");
+        }
+
+        :root {
+            --blue-active: #064792;
+        }
+
+        * {
+            user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+            box-sizing: border-box;
+        }
+
+        img {
+            pointer-events: none;
+        }
+
+        body, html {
+            height: 100%;
+            overscroll-behavior-y: contain;
+            padding: 0;
+            margin: 0;
+            font-family: Roboto, sans-serif;
+            background: #f5f6fb;
+            color: #131419;
+        }
+body {
+    background-color: #F4F5FA;
+    font-family: 'SF Pro', sans-serif;
+    letter-spacing: 0.2px;
+    color: #1d1d1d;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 21px 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+}
+
+        @supports (-webkit-touch-callout: none) {
+            .dzit {
+                margin-bottom: 1.0rem;
+            }
+        }
+
+                .navbar {
+            overflow: hidden;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .spinner {
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            border: .2em solid #dfdfdf;
+            border-right-color: #dd1b42;
+            animation: spinner-d3wgkg 1s linear infinite;
+        }
+
+        @keyframes spinner-d3wgkg {
+            to {
+                transform: rotate(1turn);
+            }
+        }
+        .Home_container__d256j {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 4em;
+        }
+
+        .Home_headerTool__SHN_p, .Home_headerTools__eMxk2, .Home_header__y2QYS, .Home_topBar__fyKqm {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .Home_headerTool__SHN_p {
+            background-color: #dce9ff;
+            color: #04478d;
+            margin-left: 10px;
+            padding: .3em;
+            border-radius: .9em;
+            font-size: .9em;
+        }
+
+        .Home_headerTool__SHN_p>p {
+            margin: 0 10px;
+        }
+
+        .Home_card__E5spL {
+            position: relative;
+        }
+
+        .Home_cardCover__Xmdu7 {
+            position: absolute;
+            bottom: 0;
+            width: 18.5em;
+            background-color: #fff;
+            text-align: left;
+            padding: 1.1em 1.2em;
+            font-weight: 300;
+            border-radius: 0 0 1.2em 1.2em;
+        }
+
+        .Home_coverText__rZqvF {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .Home_cardOverlayIcon__CiSnq {
+            position: absolute;
+            top: 1.25em;
+            left: 1.25em;
+            width: 25px;
+            height: 25px;
+            z-index: 10;
+        }
+
+        .Home_serviceRow__A7Msu {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .Home_service__yPHMD {
+            display: flex;
+            flex-direction: column;
+            font-weight: 300;
+            color: #7b7c81;
+            font-size: .8em;
+            text-align: center;
+            width: 25%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Home_serviceBox__UBneT {
+            background-color: #fff;
+            border-radius: 1.3em;
+            padding: 1.5em;
+        }
+
+        @media (max-width: 768px) {
+            .Home_container__d256j {
+                padding: 10px;
+            }
+
+            .Home_main__VkIEL {
+                padding: 0 10px;
+            }
+        }
+
+        /* Dolny pasek nawigacyjny */
+        .BottomNav_bottomNav__JQdpA {
+            width: 100%;
+            height: 90px;
+            position: fixed;
+            bottom: 0;
+            background-color: #f5f6fb;
+            border-top: 1px solid #d6d6d6;
+            z-index: 99;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            left: 0;
+        }
+
+        .BottomNav_bnTab__WzkWH {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 10px;
+        }
+
+        .BottomNav_bnTab__WzkWH img {
+            height: 24px;
+            margin-bottom: 4px;
+        }
+
+        .BottomNav_bnTab__WzkWH span {
+            font-size: .7em;
+            font-weight: 300;
+        }
+
+        .BottomNav_activeText__6iAIF {
+            color: var(--blue-active);
+        }
+
+        /* Stylizacja dla kliknięcia */
+        .BottomNav_bnTab__WzkWH img:active,
+        .BottomNav_bnTab__WzkWH img:focus,
+        .BottomNav_bnTab__WzkWH:active,
+        .BottomNav_bnTab__WzkWH:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .BottomNav_bnTab__WzkWH {
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="Home_container__d256j">
+        <div class="Home_topBar__fyKqm">
+            <img src="../images/coi_common_ui_ic_mobywatel_logo.svg" alt="img" width="32.5" height="32.5">
+            <img src="../images/ab013_notifications.svg" alt="img" width="25" height="25">
+        </div>
+
+        <main class="Home_main__VkIEL">
+            <div>
+                <div class="Home_header__y2QYS">
+                    <p style="font-size: 1.1em; font-weight: bold; ">Dokumenty</p>
+                    <div class="Home_headerTools__eMxk2">
+                        <div class="Home_headerTool__SHN_p">
+                            <p>Dodaj</p>
+                        </div>
+                        <div class="Home_headerTool__SHN_p" onclick="window.location.href='documents.html'">
+                            <p>Wszystkie</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Home_card__E5spL" onclick="window.location.href='dowodnowy.html'">
+                    <img src="../images/coi_common_ui_ic_document_id.svg" alt="document-icon" width="25" height="25" class="Home_cardOverlayIcon__CiSnq">
+                    <img src="../images/CHANGE_IT_home_mid_card.svg" alt="mid" style="width: 18.5em; height: auto; border-radius: 1em;">
+                    <div class="Home_cardCover__Xmdu7">
+                        <div class="Home_coverText__rZqvF">
+                            <p style="font-size: 1em; margin: 0; font-weight: 400; font-weight: bold;">mDowód</p>
+                            <img src="../images/ic_arrow_forward_Dgray.svg" alt="go" width="17" height="17">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="Home_header__y2QYS">
+                    <p style="font-size: 1.1em;">Usługi</p>
+                    <div class="Home_headerTools__eMxk2">
+                        <div class="Home_headerTool__SHN_p" onclick="window.location.href='services.html'">
+                            <p>Wszystkie</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Home_serviceRow__A7Msu">
+                    <div class="Home_service__yPHMD" onclick="window.location.href='dashboard.html'">
+                        <div class="Home_serviceBox__UBneT">
+                            <img src="../images/da035_bezpiecznie_w_sieci.svg" alt="ID" width="30" height="30">
+                        </div>
+                        <p>Bezpiecznie w sieci</p>
+                    </div>
+
+                    <div class="Home_service__yPHMD" onclick="window.location.href='dashboard.html'">
+                        <div class="Home_serviceBox__UBneT">
+                            <img src="../images/auto.png" alt="ID" width="30" height="30">
+                        </div>
+                        <p>Historia<br>Pojazdu</p>
+                    </div>
+
+                    <div class="Home_service__yPHMD" onclick="window.location.href='dashboard.html'">
+                        <div class="Home_serviceBox__UBneT">
+                            <img src="../images/da008_zastrzez_pesel.svg" alt="ID" width="30" height="30">
+                        </div>
+                        <p>Zastrzeż PESEL</p>
+                    </div>
+                </div>
+
+                <div class="Home_serviceRow__A7Msu">
+                    <div class="Home_service__yPHMD" onclick="window.location.href='dashboard.html'">
+                        <div class="Home_serviceBox__UBneT">
+                            <img src="../images/da031_mbiznes.svg" alt="ID" width="30" height="30">
+                        </div>
+                        <p>Firma</p>
+                    </div>
+
+                    <div class="Home_service__yPHMD" onclick="window.location.href='dashboard.html'">
+                        <div class="Home_serviceBox__UBneT">
+                            <img src="../images/da001_punkty_karne.svg" alt="ID" width="30" height="30">
+                        </div>
+                        <p>Punkty Karne</p>
+                    </div>
+
+                    <div class="Home_service__yPHMD" onclick="window.location.href='dashboard.html'">
+                        <div class="Home_serviceBox__UBneT">
+                            <img src="../images/da025_ticket.svg" alt="ID" width="30" height="30">
+                        </div>
+                        <p>Mandaty</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="BottomNav_bottomNav__JQdpA"> 
+            <div class="BottomNav_bnTab__WzkWH"> 
+                <img src="../images/b001_home.svg" alt="dashboard.html">
+                <span class="BottomNav_activeText__6iAIF">Start</span>
+            </div>
+
+            <div class="BottomNav_bnTab__WzkWH" onclick="window.location.href='documents.html'">
+                <img src="../images/ad005_framed_person.svg" alt="documents.html">
+                <span>Dokumenty</span>
+            </div>
+
+            <div class="BottomNav_bnTab__WzkWH" onclick="window.location.href='services.html'">
+                <img src="../images/ac001_services.svg" alt="services.html">
+                <span>Usługi</span>
+            </div>
+
+            <div class="BottomNav_bnTab__WzkWH" onclick="window.location.href='qr.html'">
+                <img src="../images/ai001_scanner_qr.svg" alt="qr.html">
+                <span>Kod QR</span>
+            </div>
+
+            <div class="BottomNav_bnTab__WzkWH" onclick="window.location.href='more.html'">
+                <img src="../images/ab010_more.svg" alt="more.html">
+                <span>Więcej</span>
+            </div>
+        </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8e7d7fb3086341bb',t:'MTczMjQ5NDI5OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8e7d8c4b6cbc1902',t:'MTczMjQ5NDgxNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>
